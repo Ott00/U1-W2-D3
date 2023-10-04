@@ -265,7 +265,7 @@ switch (randomCharacter.gender) {
     genderCharacter = "She";
     break;
   case "robot":
-    genderCharacter = "He";
+    genderCharacter = "It";
     break;
 }
 
