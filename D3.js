@@ -257,29 +257,19 @@ const randomNumber = Math.floor(Math.random() * starWarsCharacters.length);
 const randomCharacter = starWarsCharacters[randomNumber];
 
 let genderCharacter;
-
-switch (randomCharacter.gender) {
-  case "male":
-    genderCharacter = "he";
-    break;
-  case "female":
-    genderCharacter = "she";
-    break;
-  case "robot":
-    genderCharacter = "it";
-    break;
-}
-
 let thirdGenderCharacter;
 
 switch (randomCharacter.gender) {
   case "male":
+    genderCharacter = "he";
     thirdGenderCharacter = "his";
     break;
   case "female":
+    genderCharacter = "she";
     thirdGenderCharacter = "her";
     break;
   case "robot":
+    genderCharacter = "it";
     thirdGenderCharacter = "its";
     break;
 }
