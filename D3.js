@@ -259,13 +259,13 @@ let genderCharacter;
 
 switch (randomCharacter.gender) {
   case "male":
-    genderCharacter = "He";
+    genderCharacter = "he";
     break;
   case "female":
-    genderCharacter = "She";
+    genderCharacter = "she";
     break;
   case "robot":
-    genderCharacter = "It";
+    genderCharacter = "it";
     break;
 }
 
@@ -288,13 +288,13 @@ console.log(
   randomCharacter.name,
   "is tall",
   randomCharacter.height,
-  "and it has a mass of",
+  "and " + genderCharacter + " has a mass of",
   randomCharacter.mass,
-  "kg.",
+  "kg,",
   genderCharacter,
   randomCharacter.hair_color !== "n/a"
-    ? "have " + randomCharacter.hair_color + " hair."
-    : "is Bold.",
+    ? "have " + randomCharacter.hair_color + " hair,"
+    : "is Bold,",
   genderCharacter + " have",
   randomCharacter.eye_color + " eyes",
   "and " +
