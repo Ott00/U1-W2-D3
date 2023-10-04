@@ -231,6 +231,7 @@ console.log(starWarsCharacters);
 */
 
 console.log("Prima", characters);
+console.log("Prima", characters.length);
 
 for (let i = 0; i < characters.length; i++) {
   for (let j = 0; j < femaleCharacters.length; j++) {
@@ -245,13 +246,13 @@ for (let i = 0; i < characters.length; i++) {
 }
 
 console.log("Dopo", characters);
+console.log("Dopo", characters.length);
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
 const randomNumber = Math.floor(Math.random() * starWarsCharacters.length);
-console.log(randomNumber);
 
 const randomCharacter = starWarsCharacters[randomNumber];
 
